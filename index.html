@@ -32,18 +32,17 @@
     header {
       background: var(--surface);
       border-bottom: 1px solid var(--border);
-      padding: 28px 24px;
+      padding: 24px 24px;
       text-align: center;
     }
-    header .wordmark {
-      font-size: 22px;
-      font-weight: 700;
-      letter-spacing: -0.5px;
-      color: var(--text);
+    header .wordmark img {
+      height: 32px;
+      width: auto;
+      /* Invert the dark navy logo to white so it reads on the dark header */
+      filter: brightness(0) invert(1);
     }
-    header .wordmark span { color: var(--accent); }
     header .subtitle {
-      margin-top: 4px;
+      margin-top: 6px;
       font-size: 13px;
       color: var(--muted);
       letter-spacing: 0.5px;
@@ -192,7 +191,7 @@
 <body>
 
 <header>
-  <div class="wordmark">tw<span>x</span>n</div>
+  <div class="wordmark"><img src="logo.png" alt="Twxn" /></div>
   <div class="subtitle">Beauty discovery · built different</div>
 </header>
 
